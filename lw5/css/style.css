@@ -14,6 +14,7 @@
 
 .header
 {
+<<<<<<< HEAD
     margin-bottom: 10px;
     position: relative;
     top: -17px;
@@ -54,18 +55,46 @@
     width: 17px;
     margin-left: 36px;
     margin-right: 10px;
+=======
+    display: inline;
+    margin-left: 492px;
+}
+
+.about_me_icon
+{
+    margin-right: 7px;
+}
+
+.hobby_icon
+{
+    margin-left: 37px;
+}
+
+.video_icon
+{
+    margin-left: 43px;
+>>>>>>> a60f3f5fa0321afd64ea31f50af2b5058a32ec22
 }
 
 .menu
 {
     font: 19px/32px "Georgia";
     color: #333333;
+<<<<<<< HEAD
     display: inline-block;
 }
 
 .image_film
 {
     width: 285px;
+=======
+    display: inline;
+}
+
+.imagefilm
+{
+    width: 283px;
+>>>>>>> a60f3f5fa0321afd64ea31f50af2b5058a32ec22
     height: 189px;
     border-radius: 5px;
     background-color: #464646;
@@ -75,9 +104,13 @@
 {
     font: 700 22px/32px "Open Sans";
     color: #333333;
+<<<<<<< HEAD
     position: relative;
     top: -9px;
     left: -1px;
+=======
+    margin: 22px 0 0 0;
+>>>>>>> a60f3f5fa0321afd64ea31f50af2b5058a32ec22
 }
 
 .description
@@ -85,37 +118,63 @@
     font: 16px/28px "Georgia";
     color: #555555;
     width: 283px;
+<<<<<<< HEAD
     position: relative;
     top: -22px;
+=======
+>>>>>>> a60f3f5fa0321afd64ea31f50af2b5058a32ec22
 }
 
 .love_and_pigeons
 {
+<<<<<<< HEAD
     left: 305px;
     position: relative;
     top: -632px;
+=======
+    position: absolute;
+    top: 101px;
+    left: 305px;
+>>>>>>> a60f3f5fa0321afd64ea31f50af2b5058a32ec22
 }
 
 .christmas_story
 {
+<<<<<<< HEAD
     position: relative;
     top: -1212px;
     left: 610px;
+=======
+    position: absolute;
+    top: 101px;
+    left: 611px;
+>>>>>>> a60f3f5fa0321afd64ea31f50af2b5058a32ec22
 }
 
 .rise_of_the_guardians
 {
+<<<<<<< HEAD
     position: relative;
     top: -1847px;
+=======
+    position: absolute;
+    top: 101px;
+>>>>>>> a60f3f5fa0321afd64ea31f50af2b5058a32ec22
     left: 915px;
 }
 
 .films_description
 {
+<<<<<<< HEAD
     position: relative;
     top: -805px;
     left: 352px;
     margin-bottom: 10px;
+=======
+    position: absolute;
+    top: 1204px;
+    left: 360px;
+>>>>>>> a60f3f5fa0321afd64ea31f50af2b5058a32ec22
 }
 
 .authors_container
@@ -129,6 +188,7 @@
 
 .main_container
 {
+<<<<<<< HEAD
     position: relative;
     top: -983px;
     left: 861px;
@@ -141,6 +201,18 @@
     position: relative;
     top: -38px;
     left: -8px;
+=======
+    position: absolute;
+    top: 465px;
+    left: 870px;
+>>>>>>> a60f3f5fa0321afd64ea31f50af2b5058a32ec22
+}
+
+.background
+{
+    width: 100%;
+    height: 402px;
+    margin: 10px 0;
 }
 
 .h1
@@ -167,8 +239,13 @@
     height: 6px;
     border-radius: 3px;
     background-color: #45c3aa;
+<<<<<<< HEAD
     position: relative;
     top: -8px;
+=======
+    position: absolute;
+    top: 102px;
+>>>>>>> a60f3f5fa0321afd64ea31f50af2b5058a32ec22
 }
 
 .about_me
@@ -181,6 +258,7 @@
 
 .h2
 {
+<<<<<<< HEAD
     color: #333333;
     font: 400 36px/42px "Open Sans";
 
@@ -196,6 +274,22 @@
 {
     width: 285px;
     margin-top: 42px;
+=======
+    width: 285px;
+    color: #333333;
+    font: 400 36px/42px "Open Sans";
+
+}
+
+.h2_films
+{
+    margin-top: 26px;
+}
+
+.h2_hobby
+{
+    margin-top: 26px;
+>>>>>>> a60f3f5fa0321afd64ea31f50af2b5058a32ec22
 }
 
 .hobby
@@ -235,9 +329,15 @@ a:hover
 {
     color: #ffffff;
     font: italic 28px/42px "Georgia";
+<<<<<<< HEAD
     position: relative;
     top: -236px;
     left: 864px;
+=======
+    position: absolute;
+    top: 258px;
+    left: 872px;
+>>>>>>> a60f3f5fa0321afd64ea31f50af2b5058a32ec22
     width: 510px;
 }
 
@@ -246,9 +346,15 @@ a:hover
     width: 204px;
     color: #f5f5f5;
     font: 600 16px/42px "Open Sans";
+<<<<<<< HEAD
     left: 885px;
     top: -262px;
     position: relative;
+=======
+    left: 878px;
+    top: 356px;
+    position: absolute;
+>>>>>>> a60f3f5fa0321afd64ea31f50af2b5058a32ec22
 }
 
 .h3
@@ -285,6 +391,7 @@ a:hover
 
 .one_plus_one
 {
+<<<<<<< HEAD
     position: relative;
     top: 3px;
 }
@@ -293,13 +400,29 @@ a:hover
 {
     width: 222px;
     height: 53px;
+=======
+    position: absolute;
+    top: 99px;
+}
+
+.all_films
+{
+    width: 114px;
+>>>>>>> a60f3f5fa0321afd64ea31f50af2b5058a32ec22
     border-radius: 5px;
     background-color: #15a98c;
     font: 19px/32px "Georgia";
     color: #f5f5f5;
+<<<<<<< HEAD
     position: relative;
     top: -1497px;
     left: 478px;
+=======
+    position: absolute;
+    top: 900px;
+    left: 480px;
+    padding: 9px 53px;
+>>>>>>> a60f3f5fa0321afd64ea31f50af2b5058a32ec22
 }
 
 .footer
@@ -310,6 +433,7 @@ a:hover
     position: absolute;
     bottom: px;
     top: 2271px;
+<<<<<<< HEAD
     margin-top: -1px;
 }
 
@@ -325,3 +449,6 @@ q
 {
     quotes: "\00ab" "\00bb";
 }
+=======
+}
+>>>>>>> a60f3f5fa0321afd64ea31f50af2b5058a32ec22
