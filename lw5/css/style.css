@@ -1,3 +1,81 @@
+.header
+{
+    display: inline;
+    margin-left: 492px;
+}
+
+.about_me_icon
+{
+    margin-right: 7px;
+}
+
+.hobby_icon
+{
+    margin-left: 37px;
+}
+
+.video_icon
+{
+    margin-left: 43px;
+}
+
+.menu
+{
+    font: 19px/32px "Georgia";
+    color: #333333;
+    display: inline;
+}
+
+.imagefilm
+{
+    width: 283px;
+    height: 189px;
+    border-radius: 5px;
+    background-color: #464646;
+}
+
+.h4
+{
+    font: 700 22px/32px "Open Sans";
+    color: #333333;
+    margin: 22px 0 0 0;
+}
+
+.description
+{
+    font: 16px/28px "Georgia";
+    color: #555555;
+    width: 283px;
+}
+
+.love_and_pigeons
+{
+    position: absolute;
+    top: 101px;
+    left: 305px;
+}
+
+.christmas_story
+{
+    position: absolute;
+    top: 101px;
+    left: 611px;
+}
+
+.rise_of_the_guardians
+{
+    position: absolute;
+    top: 101px;
+    left: 915px;
+}
+
+.films_description
+{
+    position: absolute;
+    top: 1204px;
+    left: 360px;
+}
+
 .authors_container
 {
     position: absolute;
@@ -8,8 +86,15 @@
 .main_container
 {
     position: absolute;
-    top: 625px;
+    top: 465px;
     left: 870px;
+}
+
+.background
+{
+    width: 100%;
+    height: 402px;
+    margin: 10px 0;
 }
 
 .h1
@@ -40,15 +125,6 @@
     top: 102px;
 }
 
-.quote_image
-{
-    width: 130px;
-    height: 87px;
-    position: absolute;
-    top: 310px;
-    left: 870px;
-}
-
 .about_me
 {
     width: 508px;
@@ -59,13 +135,23 @@
 
 .h2
 {
-    width: 184px;
+    width: 285px;
     color: #333333;
     font: 400 36px/42px "Open Sans";
-    margin-top: 24px;
+
 }
 
-.hobbi
+.h2_films
+{
+    margin-top: 26px;
+}
+
+.h2_hobby
+{
+    margin-top: 26px;
+}
+
+.hobby
 {
     width: 555px;
     font: 19px/32px "Georgia";
@@ -84,21 +170,21 @@
 
 .quote
 {
-    color: #848484;
+    color: #ffffff;
     font: italic 28px/42px "Georgia";
     position: absolute;
-    top: 350px;
-    left: 930px;
+    top: 258px;
+    left: 872px;
     width: 510px;
 }
 
 .quote_author
 {
     width: 204px;
-    color: #333333;
+    color: #f5f5f5;
     font: 600 16px/42px "Open Sans";
-    left: 930px;
-    top: 450px;
+    left: 878px;
+    top: 356px;
     position: absolute;
 }
 
@@ -130,4 +216,33 @@
     width: 330px;
     font: 19px/36px "Georgia";
     color: #555555;
+}
+
+.one_plus_one
+{
+    position: absolute;
+    top: 99px;
+}
+
+.all_films
+{
+    width: 114px;
+    border-radius: 5px;
+    background-color: #15a98c;
+    font: 19px/32px "Georgia";
+    color: #f5f5f5;
+    position: absolute;
+    top: 900px;
+    left: 480px;
+    padding: 9px 53px;
+}
+
+.footer
+{
+    left: 594px;
+    font: 16px/32px "Georgia";
+    color: #555555;
+    position: absolute;
+    bottom: px;
+    top: 2271px;
 }
