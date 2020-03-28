@@ -106,28 +106,28 @@
       <hr class="hr hr2">
       <form class="form">
         <p class="form_text form_text_required">Ваше имя</p>
-        <input type="text" class="field name_field input_text all_fields"/>
+        <input type="text" name="your_name" class="field name_field input_text all_fields"/>
         <p class="form_text form_text_required">Ваш email</p>
-        <input type="text" class="field email_field input_text all_fields"/>
+        <input type="text" name="email" class="field email_field input_text all_fields"/>
         <p class="form_text">Откуда вы?</p>
           <select name="country" class="country_field select all_fields">
-          <option class="input_text">Россия</option>
-          <option class="input_text">Украина</option>
-          <option class="input_text">Беларусь</option>
-          <option class="input_text">Англия</option>
-          <option class="input_text">Франция</option>
-          <option class="input_text">Германия</option>
-          <option class="input_text">США</option>
+          <option value="rus" class="input_text">Россия</option>
+          <option value="uk" class="input_text">Украина</option>
+          <option value="by" class="input_text">Беларусь</option>
+          <option value="eng" class="input_text">Великобритания</option>
+          <option value="fr" class="input_text">Франция</option>
+          <option value="ger" class="input_text">Германия</option>
+          <option value="usa" class="input_text">США</option>
         </select>
         <p class="form_text gender_margin">Ваш пол</p>
         <p class="gender gender_position1">
-          <input type="radio" class="gender_radio" name="gender">Мужской
+          <input type="radio" class="gender_radio" name="gender" value="man">Мужской
         </p>
         <p class="gender gender_position2">
-          <input type="radio" class="gender_radio" name="gender">Женский
+          <input type="radio" class="gender_radio" name="gender" value="woman">Женский
         </p>
         <p class="form_text message_margin form_text_required">Ваше сообщение</p>
-        <textarea class="message input_text all_fields"></textarea>
+        <textarea name="message" class="message input_text all_fields"></textarea>
         <input type="submit" value="Отправить" class="submit">
       </form>
     </div>
