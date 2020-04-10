@@ -1,23 +1,25 @@
-@font-face
+body
 {
-    font-family: Georgia; 
-    src: url(fonts/Georgia Regular.ttf);
-    font-style: normal;
+    margin: 0 auto;
 }
 
-@font-face
+.menu
 {
-    font-family: Georgia; 
-    src: url(fonts/Georgia Italic.ttf);
-    font-style: italic;
+    margin: 5px 0 9.5px 82.5px;
+    font: 19px/32px "Georgia";
+    color: #333333;
+    display: inline-block;
+    border: none;
+    background-color: transparent;
 }
 
-.header
+.main_background
 {
-    margin-bottom: 10px;
-    position: relative;
-    top: -17px;
-    left: 493px;
+    background: url(../images/background.png);
+    height: 400px;
+    width: 126%;
+    margin: -12px 0 0 -330px;
+    clear: both;
 }
 
 .about_me_button:before
@@ -25,14 +27,29 @@
     content: "";
     background: url(../images/about_me_icon.png);
     display: inline-block;
-    height: 15px;
-    width: 13px;
-    margin-right: 11px;
+    height: 16px;
+    width: 15px;
+    margin-right: 9px;
+    position: relative;
+    top: 1px;
+}
+
+.about_me_button:hover
+{
+    color: #ffffff;
+    background-color: #15a98b;
+    padding: 10px 22px 8px 21px;
+    margin: -9px -15.5px 2px 67px;
+}
+
+.menu:focus
+{
+    outline: none;
 }
 
 .hobby_button
 {
-    margin-left: 28px
+    margin-left: 16px
 }
 
 .hobby_button:before
@@ -42,7 +59,20 @@
     display: inline-block;
     height: 16px;
     width: 16px;
-    margin: 0 11px -2px 9px;
+    margin: 0 10px -2px 9px;
+}
+
+.hobby_button:hover
+{
+    color: #ffffff;
+    background-color: #15a98b;
+    padding: 10px 21px 8px 11px;
+    margin: -9px -15px 2px 11px;
+}
+
+.video_button
+{
+    margin-left: 24px;
 }
 
 .video_button:before
@@ -52,238 +82,82 @@
     display: inline-block;
     height: 15px;
     width: 16px;
-    margin-left: 36px;
     margin-right: 10px;
 }
 
-.menu
+.video_button:hover
 {
-    font: 19px/32px "Georgia";
-    color: #333333;
-    display: inline-block;
+    color: #ffffff;
+    background-color: #15a98b;
+    padding: 10px 21px 8px 74px;
+    margin: -9px -21px 2px 11px;
 }
 
-.image_film
+.about_me_button:hover:before
 {
-    width: 285px;
-    height: 190px;
+    background: url(../images/about_me_icon_white.png);
+    margin-right: 9px;
+}
+.hobby_button:hover:before
+{
+    background: url(../images/hobby_icon_white.png);
+    margin: 0 10px -2px 9px;
+}
+
+.video_button:hover:before
+{
+    background: url(../images/video_icon_white.png);
+    margin-left: -55px;
+    margin-right: 10px;
+}
+
+.selfie
+{
+    display: block;
+    width: 330px;
+    height: 350px;
     border-radius: 5px;
-    background-color: #464646;
 }
 
-.h4
+.left_column
 {
-    font: 700 22px/32px "Open Sans";
-    color: #333333;
-    position: relative;
-    top: -11px;
-    left: -1px;
-}
-
-.description
-{
-    font: 16px/28px "Georgia";
-    color: #555555;
-    width: 283px;
-    position: relative;
-    top: -22px;
-}
-
-.love_and_pigeons
-{
-    left: 305px;
-    position: relative;
-    top: -634px;
-}
-
-.christmas_story
-{
-    position: relative;
-    top: -1214px;
-    left: 610px;
-}
-
-.rise_of_the_guardians
-{
-    position: relative;
-    top: -1850px;
-    left: 915px;
-}
-
-.films_description
-{
-    position: relative;
-    top: -1862px;
-    left: 352px;
-    margin-bottom: 10px;
-}
-
-.films_background
-{
-    position: relative;
-    top: -817px;
+    margin: -190px 0 0 150px;
+    width: 26.5%;
 }
 
 .authors_container
 {
-    position: relative;
-    top: -413px;
-    left: 471px;
-    margin-bottom: 10px;
+    margin-top: 45px;
     width: 330px;
 }
 
-.main_container
+.authors_list
 {
-    position: relative;
-    top: -981px;
-    left: 861px;
-    margin-bottom: 10px;
-}
-
-.background
-{
-    height: 400px;
-    width: 1920px;
-    position: relative;
-    top: -38px;
-    left: -8px;
-}
-
-.h1
-{
-    font: 700 48px/42px "Open Sans";
-    color: #333333;
-}
-
-.image
-{
-    width: 330px;
-    height: 350px;
-    border-radius: 5px;
-    background-color: #132d36;
-    position: relative;
-    top: -430px;
-    left: 472px;
-}
-
-.rectangle
-{
-    width: 60px;
-    height: 6px;
-    border-radius: 3px;
-    background-color: #45c3aa;
-    position: relative;
-    top: -8px;
-}
-
-.about_me
-{
-    width: 508px;
-    color: #555555;
-    font: 19px/32px "Georgia";
-    margin-top: 31px;
-}
-
-.h2
-{
-    color: #333333;
-    font: 400 36px/42px "Open Sans";
-
-}
-
-.h2_hobby
-{
-    width: 285px;
-    margin-top: 42px;
-    margin-left: -1px;
-    color: #333333;
-    font: 400 36px/42px "Open Sans";
-
-}
-
-.h2_films
-{
-    margin-top: 37px;
-}
-
-.hobby
-{
-    width: 555px;
-    font: 19px/32px "Georgia";
-    color: #555555;
-    margin-top: -15px;
-}
-
-.link
-{
-    width: 139px;
-    font: 19px/32px "Georgia";
-    color: #15a98b;
-    position: relative;
-    top: 118px;
-    text-decoration: none;
-    border-bottom: 1px solid #000;
-    border-bottom-color: #15a98b;
-}
-
-.link:after
-{
-    content: "\2192";
-    display: inline-block;
-    position: absolute;
-    right: -24px;
-}
-
-a:hover
-{
-    border:0;
-}
-
-.quote
-{
-    color: #ffffff;
-    font: italic 28px/42px "Georgia";
-    position: relative;
-    top: -236px;
-    left: 864px;
-    width: 520px;
-}
-
-.quote_author
-{
-    width: 204px;
-    color: #f5f5f5;
-    font: 600 16px/42px "Open Sans";
-    left: 885px;
-    top: -262px;
-    position: relative;
-}
-
-.h3
-{
-    color: #15a98c;
-    font: 600 24px/32px "Open Sans";
+    margin-top: -12px;
+    margin-left: -18px;
 }
 
 .films_container
 {
-    position: relative;
-    top: -384px;
-    left: 472px;
-    margin-bottom: 10px;
+    margin-top: 42px;
     width: 330px;
 }
 
 .films_list
 {
-    margin: -13px -20px;
-    padding-left: 39px;
+    margin-top: -12px;
+    margin-left: -20px;
 }
 
-.authors_list
+.lists_title
 {
-    margin: -11px -16px;
+    color: #15a98c;
+    font: 600 24px/32px "Open Sans";
+}
+
+.first_string
+{
+    margin-left: -2px;
 }
 
 .list
@@ -293,10 +167,174 @@ a:hover
     color: #555555;
 }
 
+.quote_block
+{
+    float: left;
+    margin-top: -835px;
+    margin-left: 542px;
+    width: 38%;
+}
+
+.quote
+{
+    color: #ffffff;
+    font: italic 28px/42px "Georgia";
+    margin-bottom: -14px;
+    width: 520px;
+}
+
+.quote_author
+{
+    width: 204px;
+    color: #f5f5f5;
+    font: 600 16px/42px "Open Sans";
+    margin-left: 4px;
+}
+
+.right_column
+{
+    float: left;
+    margin-bottom: 10px;
+    width: 41%;
+    margin-top: -629px;
+    margin-left: 540px;
+}
+
+.about_me_title
+{
+    font: 700 48px/42px "Open Sans";
+    color: #333333;
+    margin-bottom: 31px;
+    margin-left: -4px;
+}
+
+.rectangle
+{
+    width: 60px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #45c3aa;
+    margin-bottom: 8px;
+}
+
+.about_me
+{
+    width: 508px;
+    color: #555555;
+    font: 19px/32px "Georgia";
+    margin-top: 31px;
+    margin-left: -1px;
+}
+
+.hobby_and_films_title
+{
+    color: #333333;
+    font: 400 36px/42px "Open Sans";
+}
+
+.hobby_title
+{
+    width: 285px;
+    margin-top: 43px;
+    margin-left: -2px;
+    color: #333333;
+    font: 400 36px/42px "Open Sans";
+
+}
+
+.hobby
+{
+    width: 555px;
+    font: 19px/32px "Georgia";
+    color: #555555;
+    margin-top: -15px;
+    margin-bottom: 137px;
+}
+
+.link
+{
+    width: 139px;
+    font: 19px/32px "Georgia";
+    color: #15a98b;
+    text-decoration: none;
+}
+
+.link_line
+{
+    width: 115px;
+    height: 2px;
+    background-color: #7bcebd;
+    border: none;
+    margin-top: -7px;
+    margin-left: 0px;
+}
+
+.link:after
+{
+    content: "\2192";
+    position: relative;
+    right: -5px;
+    top: 1px;
+}
+
+.link:hover
+{
+    color: #2E8B57;
+}
+
+.films_description_block
+{
+    margin-top: 127px;
+    background-color: #f9f9f9;
+    padding: 5px 0 60px 30px;
+}
+
+.description
+{
+    font: 16px/28px "Georgia";
+    color: #555555;
+    width: 283px;
+    margin-top: -12px;
+}
+
+.image_film
+{
+    width: 285px;
+    height: 190px;
+    border-radius: 5px;
+    background-color: #464646;
+    margin-top: 3px;
+    margin-bottom: -10px;
+}
+
+.all_films_titles
+{
+    font: 700 22px/32px "Open Sans";
+    color: #333333;
+}
+
 .one_plus_one
 {
-    position: relative;
-    top: 3px;
+    float: left;
+}
+
+.love_and_pigeons
+{
+    float: left;
+    margin-left: 20px;
+}
+
+.stardust
+{
+    float: left;
+    margin-left: 20px;
+}
+
+.rise_of_the_guardians
+{
+    float: left;
+    margin-top: -617px;
+    margin-left: 915px;
 }
 
 .all_films_button
@@ -305,45 +343,55 @@ a:hover
     background-color: #15a98c;
     font: 19px/32px "Georgia";
     color: #f5f5f5;
-    position: relative;
-    top: -1500px;
-    left: 478px;
-    padding: 8px 55px;
+    padding: 9px 55px;
+    margin-top: 206px;
+    margin-left: 480px;
+    border:none;
 }
 
-.hr
+.volgatech
 {
-    position: relative;
+    background-color: #f5f5f5;
+    font: 16px/32px "Georgia";
+    color: #555555;
+    margin-top: 52px;
+    padding: 16px 0 50px 262px;
+    height: 51px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.clear
+{
+    clear:both;
+}
+
+.line
+{
     width: 198px;
+    float: left;
+    height: 1px;
+    margin-top: 66px;
+    background-color: #c4c4c4;
+    border: none;
 }
 
-.hr1
+.left_line
 {
-    top: -3247px;
-    left: 527px;
+    margin-left: 275px;
 }
 
-.hr2
-{
-    top: -3351px;
-    left: 29px;
-}
-
-.h2_form
+.write_me
 {
     font: 300 36px/42px "Open Sans";
     color: #333333;
-    position: relative;
-    top: -3300px;
-    left: 823px;
-    margin-bottom: 31px;
+    margin: 45px 24px 68px 28px;
+    float: left;
 }
 
 .form
 {
-    position: relative;
-    top: -3285px;
-    left: 681px;
+    margin-left: 359px;
     width: 560px;
 }
 
@@ -351,7 +399,7 @@ a:hover
 {
     font: 400 20px/32px "Open Sans";
     color: #333333;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
 }
 
 .form_text_required:after
@@ -379,14 +427,21 @@ a:hover
     border: 2px solid #15a98c;
 }
 
+.all_fields:focus
+{
+    outline: none;
+    border-radius: 3px;
+    border: 2px solid #15a98c;
+}
+
 .name_field
 {
-    margin-bottom: 4px;
+    margin-bottom: 24px;
 }
 
 .email_field
 {
-    margin-bottom: 5px;
+    margin-bottom: 25px;
 }
 
 .country_field
@@ -395,7 +450,7 @@ a:hover
     height: 50px;
     border-radius: 3px;
     border: 2px solid #c9c9c9;
-    margin-top: 1px;
+    margin-top: 4px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -403,70 +458,61 @@ a:hover
     padding-bottom: 2px;
     font: 400 18px/32px "Open Sans";
     color: #555555;
-}
-
-.select
-{
-    background: url(../images/arrow_down.png);
-    background-repeat: no-repeat;
-    background-position: center right 16px;
+    background: url(../images/arrow_down.png) center right 16px no-repeat;
 }
 
 .input_text
 {
     font: 400 18px/32px "Open Sans";
     color: #555555;
+    margin-top: 3px;
 }
 
 .gender_margin
 {
     margin-top: 41px;
-    margin-bottom: 5px;
-}
-
-.gender_position1
-{
-    top: -14px;
-    left: -4px;
-}
-
-.gender_position2
-{
-    top: -64px;
-    left: 136px;
+    margin-bottom: 4px;
 }
 
 .gender
 {
     font: 400 18px/32px "Open Sans";
     color: #333333;
-    position: relative;
 }
 
 .gender_radio
 {
-    margin-right: 8px;
+    margin-left: 1px;
+    margin-right: 4px;
+}
+
+.gender_radio_female
+{
+    margin-left: 36px;
 }
 
 .gender_radio:hover
 {
-    border: 2px solid #15a98c !important;
+    border: 2px solid #15a98c;
 }
 
 .message_margin
 {
-    margin-bottom: 3px;
-    margin-top: -46px;
+    display: block;
+    margin-top: 36px;
+    margin-bottom: 0px;
 }
 
 .message
 {
-    width: 532px;
-    height: 142px;
+    width: 502px;
+    height: 144px;
     margin-left: 1px;
+    margin-bottom: 45px;
     border-radius: 3px;
     border: 2px solid #c9c9c9;
     resize: none;
+    padding: 0 17px 2px 17px;
 }
 
 .submit
@@ -477,31 +523,6 @@ a:hover
     height: 50px;
     border-radius: 5px;
     background-color: #15a98c;
-    position: relative;
-    top: 45px;
     padding-top: 3px;
-}
-
-.footer
-{
-    left: 586px;
-    font: 16px/32px "Georgia";
-    color: #555555;
-    position: relative;
-    top: -3244px;
-    margin-top: -2px;
-    margin-left: -2px;
-}
-
-.footer_background
-{
-    position: relative;
-    top: -3188px;
-    left: -10px;
-    width: 1920px;
-}
-
-q
-{
-    quotes: "\00ab" "\00bb";
+    border:none;
 }
