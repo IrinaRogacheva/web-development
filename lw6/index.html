@@ -105,12 +105,12 @@
       <h2 class="write_me">НАПИШИ МНЕ</h2>
       <hr class="line">
       <div class="clear"></div>
-      <form class="form">
-        <label for "your_name" class="form_text form_text_required">Ваше имя</label>
-        <input type="text" id="your_name" name="your_name" class="field name_field input_text all_fields"/>
-        <label for "email" class="form_text form_text_required">Ваш email</label>
-        <input type="text" id="email" name="email" class="field email_field input_text all_fields"/>
-        <label for "country" class="form_text">Откуда вы?</label>
+      <form method="GET" class="form">
+        <label for="your_name" class="form_text form_text_required">Ваше имя</label>
+        <input type="text" id="your_name" name="your_name" required class="field name_field input_text all_fields"/>
+        <label for="email" class="form_text form_text_required">Ваш email</label>
+        <input type="email" id="email" name="email" required class="field email_field input_text all_fields"/>
+        <label for="country" class="form_text">Откуда вы?</label>
         <select name="country" id="country" class="country_field all_fields">
           <option value="rus" class="input_text">Россия</option>
           <option value="uk" class="input_text">Украина</option>
@@ -122,11 +122,11 @@
         </select>
         <p class="form_text gender_margin">Ваш пол</p>
         <input type="radio" id="male" class="gender_radio" name="gender" value="male" checked>
-        <label for "male" class="gender">Мужской</label>
+        <label for="male" class="gender">Мужской</label>
         <input type="radio" id="female" class="gender_radio gender_radio_female" name="gender" value="female">
-        <label for "female" class="gender">Женский</label>
-        <label class="form_text message_margin form_text_required">Ваше сообщение</label>
-        <textarea name="message" class="message input_text all_fields"></textarea>
+        <label for="female" class="gender">Женский</label>
+        <label for="message" class="form_text message_margin form_text_required">Ваше сообщение</label>
+        <textarea name="message" required id="message" class="message input_text all_fields"></textarea>
         <input type="submit" value="Отправить" class="submit">
       </form>
     </div>
