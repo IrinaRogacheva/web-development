@@ -11,8 +11,8 @@ function isPrimeNumber(number) {
       console.log(number, 'is prime number');
       return;
     } else {
-    console.log(number, 'is not prime number');
-    return;
+      console.log(number, 'is not prime number');
+      return;
     }
   }
   if (typeof(number) === 'object') {
