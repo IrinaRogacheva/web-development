@@ -1,5 +1,9 @@
 function isPrimeNumber(number) {
-  if (typeof(number) === 'number' && number > 1 && Number.isInteger(number)) {
+  if (typeof number !== 'number' && typeof number !== 'object') {
+    console.log(number, ' is invalid parameter');
+    return;
+
+  } else if (typeof number === 'number') {
     let isPrime = true;
     for (let i = 2; i < number; i++) {
       if (number % i === 0) {
@@ -7,19 +11,16 @@ function isPrimeNumber(number) {
         break;
       }
     }
-    if (isPrime) {
+
+    if (isPrime && number > 1 && Number.isInteger(number)) {
       console.log(number, 'is prime number');
-      return;
     } else {
       console.log(number, 'is not prime number');
-      return;
+    }
+
+  } else {
+    for (let i = 0; i <= number.length - 1; i++) {
+      isPrimeNumber(number[i]);
     }
   }
-  if (typeof(number) === 'object') {
-      for (let i = 0; i <= number.length - 1; i++) {
-        isPrimeNumber(number[i]);
-      }
-      return;
-  }
-  console.log(number, ' is invalid parameter');
 }
