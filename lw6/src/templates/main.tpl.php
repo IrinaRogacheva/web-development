@@ -112,19 +112,32 @@
         <input type="email" id="email" name="email" value="<?php echo $args['email'] ?? ''; ?>" class="field email_field input_text all_fields"/>
         <label for="country" class="form_text">Откуда вы?</label>
         <select name="country" id="country" class="country_field all_fields">
-            <option value="rus" class="input_text">Россия</option>
-            <option value="uk" class="input_text">Украина</option>
-            <option value="by" class="input_text">Беларусь</option>
-            <option value="eng" class="input_text">Великобритания</option>
-            <option value="fr" class="input_text">Франция</option>
-            <option value="ger" class="input_text">Германия</option>
-            <option value="usa" class="input_text">США</option>
+            <?php if ($args['country'] === "uk"): ?>
+                <option value="rus" class="input_text">Россия</option>
+                <option value="uk" selected class="input_text">Украина</option>
+                <option value="bel" class="input_text">Беларусь</option>
+            <?php elseif ($args['country'] === "bel"): ?>
+                <option value="rus" class="input_text">Россия</option>
+                <option value="uk" class="input_text">Украина</option>
+                <option value="bel" selected class="input_text">Беларусь</option>
+            <?php else: ?>
+                <option value="rus" selected class="input_text">Россия</option>
+                <option value="uk" class="input_text">Украина</option>
+                <option value="bel" class="input_text">Беларусь</option>
+            <?php endif; ?>
         </select>
         <p class="form_text gender_margin">Ваш пол</p>
-        <input type="radio" id="male" class="gender_radio" name="gender" value="male" checked>
-        <label for="male" class="gender">Мужской</label>
-        <input type="radio" id="female" class="gender_radio gender_radio_female" name="gender" value="female">
-        <label for="female" class="gender">Женский</label>
+        <?php if (($args['gender'] === "male") || !(isset($args['gender']))): ?>
+            <input type="radio" id="male" class="gender_radio" name="gender" value="male" checked>
+            <label for="male" class="gender">Мужской</label>
+            <input type="radio" id="female" class="gender_radio gender_radio_female" name="gender" value="female">
+            <label for="female" class="gender">Женский</label>
+        <?php else: ?>
+            <input type="radio" id="male" class="gender_radio" name="gender" value="male">
+            <label for="male" class="gender">Мужской</label>
+            <input type="radio" id="female" class="gender_radio gender_radio_female" name="gender" value="female" checked>
+            <label for="female" class="gender">Женский</label>
+        <?php endif; ?>
         <label for="message" class="form_text message_margin form_text_required">Ваше сообщение</label>
         <textarea name="message" id="message"  class="message input_text all_fields"><?php echo $args['message'] ?? ''; ?></textarea>
         <input type="submit" value="Отправить" class="send">

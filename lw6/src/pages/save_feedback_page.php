@@ -28,5 +28,12 @@ function saveFeedbackPage() {
     $feedback['country'] = $country;
     $feedback['message'] = $message;
 
+    $data = [
+        $name, '|', $gender,'|', $country,'|', $message
+    ];
+
+    $file = "../src/data/" . mb_strtolower($email) . ".txt";
+    file_put_contents($file, $data);
+
     renderTemplate('main.tpl.php', $feedback);
 }
