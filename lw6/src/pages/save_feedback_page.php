@@ -28,6 +28,19 @@ function saveFeedbackPage() {
     $feedback['country'] = $country;
     $feedback['message'] = $message;
 
+    if ($country ===  'rus') {
+        $country = 'Россия';
+    } elseif ($country === 'uk') {
+        $country = 'Украина';
+    } else {
+        $country = 'Беларусь';
+    }
+
+    if ($gender === 'male') {
+        $gender = 'Мужской';
+    } else {
+        $gender = 'Женский';
+    }
     $data = [
         $name, '|', $gender,'|', $country,'|', $message
     ];

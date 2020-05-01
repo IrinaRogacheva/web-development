@@ -8,9 +8,9 @@
 </head>
 <body>
 <header class="menu">
-    <button class="menu about_me_button">Обо мне</button>
-    <button class="menu hobby_button">Мое хобби</button>
-    <button class="menu video_button">Любимые фильмы</button>
+    <a class="menu about_me_button">Обо мне</a>
+    <a class="menu hobby_button">Мое хобби</a>
+    <a class="menu video_button">Любимые фильмы</a>
 </header>
 <div class="main_background"></div>
 <main class="main_block">
@@ -107,9 +107,11 @@
     <div class="clear"></div>
     <form method="POST" class="write_me_form">
         <label for="your_name" class="form_text form_text_required">Ваше имя</label>
-        <input type="text" id="your_name" name="name" value="<?php echo $args['name'] ?? ''; ?>" class="field name_field input_text all_fields"/>
+        <input type="text" id="your_name" name="name" value="<?php echo $args['name'] ?? ''; ?>"
+               class="field name_field input_text all_fields"/>
         <label for="email" class="form_text form_text_required">Ваш email</label>
-        <input type="email" id="email" name="email" value="<?php echo $args['email'] ?? ''; ?>" class="field email_field input_text all_fields"/>
+        <input type="email" id="email" name="email" value="<?php echo $args['email'] ?? ''; ?>"
+               class="field email_field input_text all_fields"/>
         <label for="country" class="form_text">Откуда вы?</label>
         <select name="country" id="country" class="country_field all_fields">
             <?php if ($args['country'] === "uk"): ?>
@@ -139,7 +141,9 @@
             <label for="female" class="gender">Женский</label>
         <?php endif; ?>
         <label for="message" class="form_text message_margin form_text_required">Ваше сообщение</label>
-        <textarea name="message" id="message"  class="message input_text all_fields"><?php echo $args['message'] ?? ''; ?></textarea>
+        <textarea name="message" id="message"  class="message input_text all_fields">
+            <?php echo $args['message'] ?? ''; ?>
+        </textarea>
         <input type="submit" value="Отправить" class="send">
         <?php if (isset($args['success'])): ?>
             <p class="success"><?php echo $args['success']; ?></p>
