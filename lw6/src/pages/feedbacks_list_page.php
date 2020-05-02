@@ -5,12 +5,14 @@ function requestAddressPage(): void
     renderTemplate('feedbacks.tpl.php');
 }
 
-function feedbacksListPage() {
+function feedbacksListPage() 
+{
     $email = getPostParameter('email');
     $data['email'] = $email;
 
     $file = ("../src/data/" . mb_strtolower($email) . ".txt");
-    if (!(file_exists($file))) {
+    if (!(file_exists($file)))
+    {
         $data['error_msg'] = 'Такой человек не отправлял вам сообщение';
         renderTemplate('feedbacks.tpl.php', $data);
         return;

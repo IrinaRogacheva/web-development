@@ -1,6 +1,7 @@
 <?php
 
-function saveFeedbackPage() {
+function saveFeedbackPage()
+{
     $name = getPostParameter('name');
     $email = getPostParameter('email');
     $gender = getPostParameter('gender');
@@ -8,17 +9,21 @@ function saveFeedbackPage() {
     $message = getPostParameter('message');
     $feedback = [];
 
-    if (empty($name)) {
+    if (empty($name))
+    {
         ($feedback['name_error_msg'] = 'Вы забыли указать ваше имя');
     }
-    if (empty($email)) {
+    if (empty($email))
+    {
         ($feedback['email_error_msg'] = 'Вы забыли указать адрес вашей электронной почты');
     }
-     if (empty($message)) {
+     if (empty($message))
+    {
          ($feedback['message_error_msg'] = 'Вы забыли написать мне сообщение');
      }
 
-    if (!(empty($name)) && !(empty($email)) && !(empty($message))) {
+    if (!(empty($name)) && !(empty($email)) && !(empty($message)))
+    {
         $feedback['success'] = 'Ваше сообщение принято!';
     }
 
@@ -28,19 +33,28 @@ function saveFeedbackPage() {
     $feedback['country'] = $country;
     $feedback['message'] = $message;
 
-    if ($country ===  'rus') {
+    if ($country ===  'rus')
+    {
         $country = 'Россия';
-    } elseif ($country === 'uk') {
+    }
+    elseif ($country === 'uk')
+    {
         $country = 'Украина';
-    } else {
+    }
+    else
+    {
         $country = 'Беларусь';
     }
 
-    if ($gender === 'male') {
+    if ($gender === 'male')
+    {
         $gender = 'Мужской';
-    } else {
+    }
+    else
+    {
         $gender = 'Женский';
     }
+
     $data = [
         $name, '|', $gender,'|', $country,'|', $message
     ];
