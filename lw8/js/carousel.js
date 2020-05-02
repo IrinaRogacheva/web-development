@@ -12,10 +12,12 @@ function carousel() {
 
     rightArrow.onclick = function(){
         if (count <= films.length + 1) {
-            offsetToEnd();
+            listOfFilms.appendChild(films[i]);
+            count++;
             i++;
         } else {
-            offsetToEnd();
+            listOfFilms.appendChild(films[i]);
+            count++;
             if (count == films.length + mainFilms) {
                 count = mainFilms;
                 i = 0;
@@ -33,10 +35,5 @@ function carousel() {
             i = numberOfFilms;
             count = films.length + mainFilms - 1;
         }
-    }
-
-    function offsetToEnd() {
-        listOfFilms.appendChild(films[i]);
-        count++;
     }
 }
