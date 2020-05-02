@@ -8,6 +8,7 @@ if (!empty($email))
 {
     $data = [$firstName, $lastName, $email, $age];
     $data = implode("|", $data);
+    mkdir('data/');
     $file = "data/" . $email . ".txt";
     file_put_contents($file, $data);
 }
