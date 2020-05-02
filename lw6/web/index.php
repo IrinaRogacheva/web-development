@@ -2,8 +2,11 @@
 
 require_once "../src/common.inc.php";
 
-if (getRequestMethod() == 'POST') {
+if (getRequestMethod() == 'POST')
+{
     saveFeedbackPage();
-} else {
+}
+else
+{
     mainPage();
 }
