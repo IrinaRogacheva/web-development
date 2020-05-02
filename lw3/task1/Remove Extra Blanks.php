@@ -1,21 +1,17 @@
 <?php
 
 header("Content-Type: text/plain");
-$name = $_GET['text'];
-$length = strlen($name);
-$name = trim($name, ' ');
-$blank = ' ';
-$x = strpos($name, ' ');
-for ($k = 0; $k <= $length; $k++)
+if ($_GET['text'])
 {
-    $outString = substr($name, 0, $x);
-    echo $outString.$blank;
-    $name = str_replace($outString, '', $name);
-    $name = substr_replace($name, ' ', strlen($outString));
-    $x = strpos($name, ' ');
-
-}   
-    
+    $name = $_GET['text'];
+    $name = trim($name, ' ');
+    $length = strlen($name);
+    for ($i = 0; $i <= $length; $i++)
+    {
+        $name = str_replace("  ", " ", $name);
+    }
+    echo $name;
+}    
 
 
   
