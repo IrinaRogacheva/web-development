@@ -15,7 +15,7 @@ if (preg_match('/[aA-zZ]/', $identifier{0}))
 }
 else 
 {
-     if (preg_match("/^[aA-zZ0-9]+$/", $identifier))
+    if (preg_match("/^[aA-zZ0-9]+$/", $identifier))
     {
         echo 'No, it starts from digit';
     } 
