@@ -331,6 +331,13 @@ body
     border-radius: 33px;
     background-color: #15a98c;
     margin: 69px 1px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.arrow:hover
+{
+    background-color: #008B8B;
 }
 
 .left_arrow_image
@@ -379,6 +386,12 @@ body
     margin-top: 206px;
     margin-left: 550px;
     border:none;
+}
+
+.all_films_button:hover
+{
+    background-color: #008B8B;
+    cursor: pointer;
 }
 
 .volgatech
