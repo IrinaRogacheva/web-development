@@ -4,7 +4,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <title>Рогачева Ирина</title>
-    <script src="js/form.js" defer></script>
+    <script src="js/savingForm.js" defer></script>
     <link  href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -106,59 +106,29 @@
     <h2 class="write_me">НАПИШИ МНЕ</h2>
     <hr class="line">
     <div class="clear"></div>
-    <form method="POST" id="form" class="write_me_form">
+    <form method="POST" id="form" class="write_me_form" name="write_me">
         <label for="name" class="form_text form_text_required">Ваше имя</label>
-        <input type="text" id="name" name="name" value="<?php echo $args['name'] ?? ''; ?>"
-               class="field name_field input_text all_fields isValidate"/>
+        <input required type="text" id="name" name="name" class="field name_field input_text all_fields isValidate"/>
         <label for="email" class="form_text form_text_required">Ваш email</label>
-        <input type="text" id="email" name="email" value="<?php echo $args['email'] ?? ''; ?>"
-               class="field email_field input_text all_fields isValidate"/>
+        <input required type="text" id="email" name="email" class="field email_field input_text all_fields isValidate"/>
         <label for="country" class="form_text">Откуда вы?</label>
         <select name="country" id="country" class="country_field all_fields">
-            <?php if ($args['country'] === "uk"): ?>
-                <option value="rus" class="input_text">Россия</option>
-                <option value="uk" selected class="input_text">Украина</option>
-                <option value="bel" class="input_text">Беларусь</option>
-            <?php elseif ($args['country'] === "bel"): ?>
-                <option value="rus" class="input_text">Россия</option>
-                <option value="uk" class="input_text">Украина</option>
-                <option value="bel" selected class="input_text">Беларусь</option>
-            <?php else: ?>
-                <option value="rus" selected class="input_text">Россия</option>
-                <option value="uk" class="input_text">Украина</option>
-                <option value="bel" class="input_text">Беларусь</option>
-            <?php endif; ?>
+            <option value="rus" class="input_text">Россия</option>
+            <option value="uk" class="input_text">Украина</option>
+            <option value="bel" class="input_text">Беларусь</option>
         </select>
         <p class="form_text gender_margin">Ваш пол</p>
-        <?php if (($args['gender'] === "male") || !(isset($args['gender']))): ?>
             <input type="radio" id="male" class="gender_radio" name="gender" value="male" checked>
             <label for="male" class="gender">Мужской</label>
             <input type="radio" id="female" class="gender_radio gender_radio_female" name="gender" value="female">
             <label for="female" class="gender">Женский</label>
-        <?php else: ?>
-            <input type="radio" id="male" class="gender_radio" name="gender" value="male">
-            <label for="male" class="gender">Мужской</label>
-            <input type="radio" id="female" class="gender_radio gender_radio_female" name="gender" value="female" checked>
-            <label for="female" class="gender">Женский</label>
-        <?php endif; ?>
         <label for="message" class="form_text message_margin form_text_required">Ваше сообщение</label>
-        <textarea name="message" id="message"  class="message input_text all_fields"><?php echo $args['message'] ?? ''; ?></textarea>
-        <input type="submit" value="Отправить" class="send">
-        <?php if (isset($args['success'])): ?>
-            <p class="success"><?php echo $args['success']; ?></p>
-        <?php endif; ?>
-        <div id="success">Ваше сообщение успешно отправлено</div>
-        <?php if (isset($args['name_error_msg'])): ?>
-            <p class="error_messages"><?php echo $args['name_error_msg']; ?></p>
-        <?php endif; ?>
-        <?php if (isset($args['email_error_msg'])): ?>
-            <p class="error_messages"><?php echo $args['email_error_msg']; ?></p>
-        <?php endif; ?>
-        <?php if (isset($args['message_error_msg'])): ?>
-            <p class="error_messages"><?php echo $args['message_error_msg']; ?></p>
-        <?php endif; ?>
+        <textarea required name="message" id="message"  class="message input_text all_fields"></textarea>
+        <div class="send_block">
+            <input type="submit" value="Отправить" class="send">
+        </div>
+        <p class="success_message" id="success_message">Ваше сообщение успешно отправлено</p>
     </form>
-
 </div>
 <footer class="volgatech">© 2006-2018 Поволжский государственный технологический университет, ФГБОУ ВО <q>ПГТУ</q></footer>
 </body>
