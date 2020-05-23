@@ -51,13 +51,6 @@ function removeRedBorder() {
     }
 }
 
-function removeRedBorderOnClick() {
-    const inputsWithRedBorder = document.querySelectorAll('.red_border');
-    for (let input of inputsWithRedBorder) {
-        input.classList.remove('red_border');
-    }
-}
-
 function run() {
     const form = document.getElementById('form');
     form.addEventListener('submit', sendData);
