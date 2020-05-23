@@ -1,4 +1,5 @@
-async function sendData() {
+async function sendData(event) {
+
     event.preventDefault();
 
     const form = document.getElementById('form');
@@ -32,21 +33,28 @@ async function sendData() {
     } else {
         alert('Ошибка' + response.status);
     }
-    
-    function addRedBorder(errors) {
-        for (let inputId of Object.keys(errors)) {
-            if (errors[inputId] === true) {
-                let invalidInput = document.getElementById(inputId);
-                invalidInput.classList.add('red_border');
-            }
+}
+
+function addRedBorder(errors) {
+    for (let inputId of Object.keys(errors)) {
+        if (errors[inputId] === true) {
+            let invalidInput = document.getElementById(inputId);
+            invalidInput.classList.add('red_border');
         }
     }
-    
-    function removeRedBorder() {
-        const inputsWithRedBorder = document.querySelectorAll('.red_border');
-        for (let input of inputsWithRedBorder) {
-            input.classList.remove('red_border');
-        }
+}
+
+function removeRedBorder() {
+    const inputsWithRedBorder = document.querySelectorAll('.red_border');
+    for (let input of inputsWithRedBorder) {
+        input.classList.remove('red_border');
+    }
+}
+
+function removeRedBorderOnClick() {
+    const inputsWithRedBorder = document.querySelectorAll('.red_border');
+    for (let input of inputsWithRedBorder) {
+        input.classList.remove('red_border');
     }
 }
 
