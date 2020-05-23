@@ -1,9 +1,8 @@
 async function getData() {
     event.preventDefault();
 
-    let form = document.getElementById('form');
-    let name = form.elements.name;
-    let email = form.elements.email;
+    const form = document.getElementById('form');
+    const email = form.elements.email;
 
     let input = {
         "email": email.value
@@ -14,7 +13,7 @@ async function getData() {
         body: JSON.stringify(input)
     });
     if (response.ok) {
-        let errorMessage = document.getElementById('error_message');
+        const errorMessage = document.getElementById('error_message');
         const answer = await response.json();
         if (answer === "error") {
             errorMessage.classList.add('show_message');
@@ -34,7 +33,7 @@ async function getData() {
 }
 
 function run() {
-    let form = document.getElementById('form');
+    const form = document.getElementById('form');
     form.addEventListener('submit', getData);
 }
 

@@ -1,14 +1,14 @@
 async function sendData() {
     event.preventDefault();
 
-    let form = document.getElementById('form');
-    let name = form.elements.name;
-    let email = form.elements.email;
+    const form = document.getElementById('form');
+    const name = form.elements.name;
+    const email = form.elements.email;
     let gender = "male";
     if (form.elements.gender.value === "female") {
         gender = "female";
     }
-    let inputs = {
+    const inputs = {
         "name": name.value,
         "email": email.value,
         "country": form.elements.country.value,
@@ -23,7 +23,7 @@ async function sendData() {
     if (response.ok) {
         const errors = await response.json();
         if (errors['success']) {
-            let successMessage = document.getElementById('success_message');
+            const successMessage = document.getElementById('success_message');
             successMessage.classList.add('show_message');
             removeRedBorder();
         } else {
@@ -43,7 +43,7 @@ async function sendData() {
     }
     
     function removeRedBorder() {
-        let inputsWithRedBorder = document.querySelectorAll('.red_border');
+        const inputsWithRedBorder = document.querySelectorAll('.red_border');
         for (let input of inputsWithRedBorder) {
             input.classList.remove('red_border');
         }
@@ -51,7 +51,7 @@ async function sendData() {
 }
 
 function run() {
-    let form = document.getElementById('form');
+    const form = document.getElementById('form');
     form.addEventListener('submit', sendData);
 }
 
