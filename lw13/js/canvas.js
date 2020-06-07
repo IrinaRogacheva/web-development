@@ -133,27 +133,24 @@ window.onload = () => {
     context.lineWidth = 3;
     context.stroke();
     context.beginPath();//помпон
-    context.moveTo(210, 86);
+    context.moveTo(211, 86);
     context.lineTo(264, 84);
     context.moveTo(213, 77);
-    context.lineTo(265, 92);
-    context.moveTo(216, 67);
-    context.lineTo(258, 104);
-    context.moveTo(224, 59);
-    context.lineTo(250, 110);
-    context.moveTo(235, 56);
-    context.lineTo(240, 112);
-    context.moveTo(245, 58);
+    context.lineTo(264, 93);
+    context.moveTo(217, 68);
+    context.lineTo(257, 103);
+    context.moveTo(225, 62);
+    context.lineTo(249, 109);
+    context.moveTo(234, 59);
+    context.lineTo(238, 110);
+    context.moveTo(244, 60);
     context.lineTo(230, 110);
-    context.moveTo(255, 65);
+    context.moveTo(253, 67);
     context.lineTo(220, 106);
-    context.moveTo(262, 70);
-    context.lineTo(214, 100);
-    context.shadowBlur = 2;
-    context.shadowOffsetX = 0;
-    context.shadowOffsetY = 0;
-    context.shadowColor = "#000";
-    context.lineWidth = 4;
+    context.moveTo(260, 72);
+    context.lineTo(215, 98);
+    context.lineCap = "round";
+    context.lineWidth = 5;
     context.strokeStyle = '#fd203f';
     context.stroke();
 
@@ -164,7 +161,6 @@ window.onload = () => {
     context.lineTo(758, 425);
     context.lineTo(770, 380);
     context.lineTo(448, 378);
-    context.shadowBlur = 0;
     context.fillStyle = '#83462b';
     context.fill();
     context.beginPath();//ботинки
