@@ -252,13 +252,14 @@ window.onload = () => {
     context.strokeStyle = '#000';
     context.stroke();
     context.beginPath();//зубы
-    context.moveTo(598, 259);
+    context.moveTo(598, 258);
     context.lineTo(636, 261);
     context.lineTo(634, 269);
     context.lineTo(595, 267);
     context.lineTo(598, 258);
     context.fill();
     context.lineWidth = 3;
+    context.lineJoin = "round";
     context.stroke();
     context.beginPath();//рот
     context.moveTo(596, 268);
