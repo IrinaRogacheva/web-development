@@ -1,0 +1,907 @@
+body
+{
+    margin: 0 auto;
+
+}
+
+.main_container
+{
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.main_background
+{
+    background: url(../images/background.png) no-repeat 50% 0;
+    height: 290px;
+    margin-top: 44px;
+}
+
+.menu
+{
+    display: flex;
+    font: 17px/20px "Georgia";
+    color: #333333;
+    text-decoration: none;
+    max-width: 525px;
+    height: 44px;
+    margin-top: -167px;
+}
+
+.menu:hover
+{
+    color: #ffffff;
+}
+
+.menu_buttons
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.menu_buttons:hover
+{
+    background-color: #15a98c;
+}
+
+.about_me_button
+{
+    flex-grow: 20;
+}
+
+.hobby_button
+{
+    flex-grow: 20;
+}
+
+.video_button
+{
+    flex-grow: 25;
+}
+
+.high_block
+{
+    margin-top: -110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selfie
+{
+    display: block;
+    max-width: 330px;
+    width: 80%;
+    min-width: 100px;
+    border-radius: 5px;
+}
+
+.quote_block
+{
+    max-width: 566px;
+}
+
+.quote_and_name_block
+{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.quote
+{
+    font: italic 26px/34px "Georgia";
+    color: #555555;
+    margin-top: auto;
+}
+
+.quote_author
+{
+    font: 600 16px/42px "Open Sans";
+    margin-left: 4px;
+    margin-top: -15px;
+}
+
+.about_me_title
+{
+    font: 700 40px/40px "Open Sans";
+    color: #333333;
+    margin: 50px 0;
+}
+
+.rectangle
+{
+    width: 60px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #45c3aa;
+}
+
+.right_column
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about_me
+{
+    color: #555555;
+    font: 19px/32px "Georgia";
+    margin-top: 50px;
+    margin-left: -1px;
+}
+
+.hobby_and_films_title
+{
+    color: #333333;
+    font: 400 30px/36px "Open Sans";
+}
+
+.hobby_title
+{
+    margin-left: -2px;
+    margin-top: 60px;
+    color: #333333;
+    font: 400 36px/42px "Open Sans";
+}
+
+.hobby
+{
+    font: 19px/32px "Georgia";
+    color: #555555;
+    margin-top: -15px;
+    margin-bottom: 50px;
+}
+
+.left_column
+{
+    margin: 0 auto;
+    width: 80%;
+    max-width: 270px
+}
+
+.authors_container
+{
+    margin-top: 50px;
+    margin-right: 18px;
+}
+
+.authors_list
+{
+    margin-top: -12px;
+    margin-left: -18px;
+}
+
+.films_container
+{
+    margin-top: 50px;
+}
+
+.films_list
+{
+    margin-top: -12px;
+    margin-left: -20px;
+}
+
+.lists_title
+{
+    color: #15a98c;
+    font: 600 24px/32px "Open Sans";
+}
+
+.first_string
+{
+    margin-left: -2px;
+}
+
+.list
+{
+
+    font: 19px/36px "Georgia";
+    color: #555555;
+}
+
+.link_block
+{
+    margin: 0 auto;
+    width: 140px;
+}
+
+.link
+{
+    width: 139px;
+    font: 19px/32px "Georgia";
+    color: #15a98b;
+    text-decoration: none;
+}
+
+.link:hover:after
+{
+    display: block;
+    content: "";
+    position: relative;
+    top: -5px;
+    left: 0;
+    height: 1px;
+    width: 115px;
+    background-color: #15a98b;
+}
+
+.link:after
+{
+    content: "\2192";
+    position: relative;
+    right: -5px;
+    top: 1px;
+}
+
+.link:hover
+{
+    color: #2E8B57;
+}
+
+.films_description_block
+{
+    margin-top: 85px;
+    background-color: #f9f9f9;
+    padding: 5px 0 60px 0;
+    width: 100%;
+}
+
+.flex_films_block
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.carousel
+{
+    display: flex;
+    width: 280px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.film_block
+{
+    margin: 0 10px;
+    width: 260px;
+}
+
+.films_title
+{
+    margin-left: 20px;
+}
+
+.arrow
+{
+    height: 50px;
+    width: 19px;
+    border-radius: 33px;
+    margin: 69px 1px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.left_arrow
+{
+    background: url(../images/left_arrow_blue.png) no-repeat center;
+}
+
+.right_arrow
+{
+    background: url(../images/right_arrow_blue.png) no-repeat center;
+}
+
+.image_film
+{
+    width: 260px;
+    height: 190px;
+    border-radius: 5px;
+    background-color: #464646;
+    margin-top: 3px;
+    margin-bottom: -10px;
+}
+
+.all_films_titles
+{
+    font: 700 22px/32px "Open Sans";
+    color: #333333;
+    margin-bottom: 17px;
+}
+
+.description
+{
+    font: 16px/28px "Georgia";
+    color: #555555;
+}
+
+.all_films_button
+{
+    border-radius: 5px;
+    background-color: #15a98c;
+    font: 19px/32px "Georgia";
+    color: #f5f5f5;
+    padding: 9px 55px;
+    margin-top: 80px;
+    border:none;
+}
+
+.films_button_block
+{
+    width: 220px;
+    margin: 0 auto;
+}
+
+.all_films_button:hover
+{
+    background-color: #008B8B;
+    cursor: pointer;
+}
+
+.volgatech
+{
+    background-color: #f5f5f5;
+    font: 16px/32px "Georgia";
+    color: #555555;
+    margin-top: 52px;
+    padding: 16px 0 10px 10%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.line
+{
+    display: none;
+}
+
+.write_me
+{
+    width: 250px;
+    margin: 60px auto;
+    font: 300 36px/42px "Open Sans";
+    color: #333333;
+}
+
+.form
+{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 540px;
+}
+
+.form_text
+{
+    font: 400 20px/32px "Open Sans";
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.form_text_required:after
+{
+    content: "*";
+    color: #ff0000;
+    margin-left: 5px;
+}
+
+.field
+{
+    width: 100%;
+    height: 43px;
+    border-radius: 3px;
+    border: 2px solid #c9c9c9;
+    font: 400 18px/32px "Open Sans";
+    padding-left: 17px;
+    padding-bottom: 2px;
+    margin-left: 1px;
+    box-sizing: border-box;
+}
+
+.all_fields:hover
+{
+    border-radius: 3px;
+    border: 2px solid #15a98c;
+}
+
+.all_fields:focus
+{
+    outline: none;
+    border-radius: 3px;
+    border: 2px solid #15a98c;
+}
+
+.name_field
+{
+    margin-bottom: 24px;
+}
+
+.email_field
+{
+    margin-bottom: 25px;
+}
+
+.country_field
+{
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    border: 2px solid #c9c9c9;
+    margin-top: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-left: 17px;
+    padding-bottom: 2px;
+    font: 400 18px/32px "Open Sans";
+    color: #555555;
+    background: url(../images/arrow_down.png) 97% 53% no-repeat;
+}
+
+.input_text
+{
+    font: 400 18px/32px "Open Sans";
+    color: #555555;
+    margin-top: 3px;
+}
+
+.gender_margin
+{
+    margin-top: 41px;
+    margin-bottom: 4px;
+}
+
+.gender
+{
+    font: 400 18px/32px "Open Sans";
+    color: #333333;
+}
+
+.gender_radio
+{
+    margin-left: 1px;
+    margin-right: 4px;
+}
+
+.gender_radio_female
+{
+    margin-left: 36px;
+}
+
+.gender_radio:hover
+{
+    border: 2px solid #15a98c;
+}
+
+.message_margin
+{
+    display: block;
+    margin-top: 36px;
+    margin-bottom: 0;
+}
+
+.message
+{
+    width: 100%;
+    height: 144px;
+    margin-left: 1px;
+    margin-bottom: 45px;
+    border-radius: 3px;
+    border: 2px solid #c9c9c9;
+    resize: none;
+    padding: 0 17px 2px 17px;
+    box-sizing: border-box;
+}
+
+.submit
+{
+    font: 19px/32px "Georgia";
+    color: #f5f5f5;
+    width: 220px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #15a98c;
+    padding-top: 3px;
+    border:none;
+}
+
+.submit:hover
+{
+    background-color: #008B8B;
+    cursor: pointer;
+}
+
+.about_me_button:hover:before
+ {
+     background: url(../images/about_me_icon_white.png);
+ }
+
+.hobby_button:hover:before
+{
+    background: url(../images/hobby_icon_white.png);
+}
+
+.video_button:hover:before
+{
+    background: url(../images/video_icon_white.png);
+}
+
+@media screen and (min-width: 370px) {
+
+    .flex_films_block {
+        margin: 0 auto;
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 480px)
+{
+    .flex_films_block {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .left_arrow {
+        background: #15a98c url(../images/left_arrow.png) no-repeat 40% 50%;
+    }
+
+    .right_arrow {
+        background: #15a98c url(../images/right_image.png) no-repeat 60% 50%;
+    }
+
+    .arrow
+    {
+        height: 70px;
+        width: 70px;
+    }
+
+    .menu
+    {
+        font: 19px/32px "Georgia";
+    }
+
+    .about_me_button:before
+    {
+        content: "";
+        background: url(../images/about_me_icon.png);
+        display: inline-block;
+        height: 16px;
+        width: 15px;
+        position: relative;
+        bottom: 1px;
+        right: 9px;
+    }
+
+    .hobby_button:before
+    {
+        content: "";
+        background: url(../images/hobby_icon.png);
+        display: inline-block;
+        height: 16px;
+        width: 16px;
+        position: relative;
+        right: 9px;
+    }
+
+    .video_button:before
+    {
+        content: "";
+        background: url(../images/video_icon.png);
+        display: inline-block;
+        height: 15px;
+        width: 16px;
+        position: relative;
+        bottom: 2px;
+        right: 10px;
+    }
+
+    .about_me_title
+    {
+        font: 700 45px/40px "Open Sans";
+    }
+
+    .quote_and_name_block
+    {
+        width: 80%;
+    }
+
+    .hobby_and_films_title
+    {
+        font: 400 36px/43px "Open Sans";
+        width: 330px;
+        margin: 40px auto;
+    }
+
+}
+
+@media screen and (min-width: 660px) {
+    .carousel
+    {
+        width: 570px;
+    }
+
+    .flex_films_block
+    {
+        width: 100%;
+    }
+
+    .arrow
+    {
+        width: 50px;
+    }
+
+    .left_arrow
+    {
+        background: url(../images/left_arrow_blue.png) no-repeat center;
+    }
+
+    .right_arrow
+    {
+        background: url(../images/right_arrow_blue.png) no-repeat center;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .high_block
+    {
+        width: 90%;
+        margin: -90px auto 0 auto;
+        flex-direction: row;
+    }
+
+    .selfie
+    {
+        margin-right: 5%;
+    }
+
+    .quote_and_name_block
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quote_block
+    {
+        width: 85%;
+    }
+
+    .quote
+    {
+        color: #ffffff;
+        font: italic 28px/42px "Georgia";
+    }
+
+    .quote_author
+    {
+        color: #f5f5f5;
+    }
+
+    .about_me_title
+    {
+        order: 1;
+        font: 700 48px/42px "Open Sans";
+    }
+
+    .rectangle
+    {
+        order: 2;
+    }
+
+    .right_column
+    {
+        width: 86%;
+    }
+
+    .hobby_title
+    {
+        margin: 40px 0;
+    }
+
+    .link_block
+    {
+        margin: 0;
+    }
+
+    .left_column
+    {
+        display: flex;
+        justify-content: space-between;
+        max-width: 600px;
+    }
+
+    .write_me_block
+    {
+        display: flex;
+        width: 690px;
+        margin: 0 auto;
+    }
+
+    .line
+    {
+        display: block;
+        width: 198px;
+        height: 1px;
+        margin-top: 80px;
+        background-color: #c4c4c4;
+        border: none;
+    }
+
+    .left_arrow {
+        background: #15a98c url(../images/left_arrow.png) no-repeat 40% 50%;
+    }
+
+    .right_arrow {
+        background: #15a98c url(../images/right_image.png) no-repeat 60% 50%;
+    }
+
+    .arrow
+    {
+        height: 70px;
+        width: 70px;
+    }
+
+    .flex_films_block
+    {
+        width: 92%;
+    }
+
+    .volgatech
+    {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .volgatech
+    {
+        padding-left: 5%;
+    }
+}
+
+@media screen and (min-width: 940px) {
+    .flex_films_block
+    {
+        width: 100%;
+    }
+
+    .arrow
+    {
+        width: 50px;
+    }
+
+    .left_arrow
+    {
+        background: url(../images/left_arrow_blue.png) no-repeat center;
+    }
+
+    .right_arrow
+    {
+        background: url(../images/right_arrow_blue.png) no-repeat center;
+    }
+
+    .carousel
+    {
+        width: 840px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .left_arrow {
+        background: #15a98c url(../images/left_arrow.png) no-repeat 40% 50%;
+    }
+
+    .right_arrow {
+        background: #15a98c url(../images/right_image.png) no-repeat 60% 50%;
+    }
+
+    .arrow
+    {
+        height: 70px;
+        width: 70px;
+    }
+
+    .flex_films_block
+    {
+        width: 97%;
+    }
+
+    .main_background
+    {
+        height: 400px;
+    }
+
+    .menu
+    {
+        margin-top: -222px;
+    }
+
+    .high_block
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .quote_block
+    {
+        width: 100%;
+    }
+
+    .content_block
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: -35px;
+    }
+
+    .left_column
+    {
+        flex-direction: column;
+        max-width: 390px;
+    }
+
+    .films_container
+    {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1230px) {
+    .carousel
+    {
+        width: 1120px;
+    }
+
+    .flex_films_block
+    {
+        width: 100%;
+    }
+
+    .arrow
+    {
+        width: 50px;
+    }
+
+    .left_arrow
+    {
+        background: url(../images/left_arrow_blue.png) no-repeat center;
+    }
+
+    .right_arrow
+    {
+        background: url(../images/right_arrow_blue.png) no-repeat center;
+    }
+}
+
+@media screen and (min-width: 1336px) {
+    .left_arrow {
+        background: #15a98c url(../images/left_arrow.png) no-repeat 40% 50%;
+    }
+
+    .right_arrow {
+        background: #15a98c url(../images/right_image.png) no-repeat 60% 50%;
+    }
+
+    .arrow
+    {
+        height: 70px;
+        width: 70px;
+    }
+
+    .films
+    {
+        width: 1300px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .films_title
+    {
+        margin-left: 105px;
+    }
+}
