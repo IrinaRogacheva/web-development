@@ -141,24 +141,10 @@
             <label for="female" class="gender">Женский</label>
         <?php endif; ?>
         <label for="message" class="form_text message_margin form_text_required">Ваше сообщение</label>
-        <textarea name="message" id="message"  class="message input_text all_fields">
-            <?php echo $args['message'] ?? ''; ?>
-        </textarea>
+        <textarea name="message" id="message"  class="message input_text all_fields"><?php echo $args['message'] ?? ''; ?></textarea>
         <input type="submit" value="Отправить" class="send">
-        <?php if (isset($args['success'])): ?>
-            <p class="success"><?php echo $args['success']; ?></p>
-        <?php endif; ?>
-        <?php if (isset($args['name_error_msg'])): ?>
-            <p class="error_messages"><?php echo $args['name_error_msg']; ?></p>
-        <?php endif; ?>
-        <?php if (isset($args['email_error_msg'])): ?>
-            <p class="error_messages"><?php echo $args['email_error_msg']; ?></p>
-        <?php endif; ?>
-        <?php if (isset($args['message_error_msg'])): ?>
-            <p class="error_messages"><?php echo $args['message_error_msg']; ?></p>
-        <?php endif; ?>
+        <div id="success"></div>
     </form>
-
 </div>
 <footer class="volgatech">© 2006-2018 Поволжский государственный технологический университет, ФГБОУ ВО <q>ПГТУ</q></footer>
 </body>

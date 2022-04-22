@@ -18,9 +18,8 @@ function feedbacksListPage()
         return;
     }
 
-        $content = file_get_contents("$file");
-        $data['answers'] = explode("|", $content);
-        $data['titles'] = ['Имя','Пол', 'Страна', 'Сообщение'];
+    $content = file_get_contents("$file");
+    $data['answers'] = explode("|", $content);
 
     renderTemplate('feedbacks.tpl.php', $data);
 }
