@@ -6,17 +6,16 @@ CREATE TABLE faculties
 (
      id                  INT AUTO_INCREMENT NOT NULL,
      facultyName         VARCHAR(255)       NOT NULL,
-     numberOfGroups      INT                NOT NULL,
      PRIMARY KEY(id)
 ) DEFAULT CHARACTER SET utf8mb4
   COLLATE `utf8mb4_unicode_ci`
   ENGINE = InnoDB
 ;
 
-INSERT INTO faculties (facultyName, numberOfGroups) VALUES
-    ('ФИиВТ', '3'),
-    ('ИММ', '3'),
-    ('ФСТ', '3');
+INSERT INTO faculties (facultyName) VALUES
+    ('ФИиВТ'),
+    ('ИММ'),
+    ('ФСТ');
 
 CREATE TABLE groups
 (
